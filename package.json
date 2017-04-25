@@ -1,19 +1,22 @@
 {
-  "name": "km-explorer",
-  "version": "0.0.1",
-  "description": "A file explorer used in kityminder",
-  "main": "index.js",
-  "author": "zhangbobell",
-  "license": "GPL-3.0",
-  "dependencies": {
-    "@types/react": "^15.0.22",
-    "@types/react-dom": "^15.5.0",
-    "react": "^15.5.4",
-    "react-dom": "^15.5.4"
-  },
-  "devDependencies": {
-    "awesome-typescript-loader": "^3.1.2",
-    "source-map-loader": "^0.2.1",
-    "typescript": "^2.2.2"
-  }
+    "name": "km-explorer",
+    "version": "0.0.1",
+    "description": "A file explorer used in kityminder",
+    "main": "index.js",
+    "author": "zhangbobell",
+    "license": "GPL-3.0",
+    "scripts": {
+        "start": "webpack-dev-server"
+    },
+    "dependencies": {
+        "@types/react": "^15.0.22",
+        "@types/react-dom": "^15.5.0",
+        "react": "^15.5.4",
+        "react-dom": "^15.5.4"
+    },
+    "devDependencies": {
+        "awesome-typescript-loader": "^3.1.2",
+        "source-map-loader": "^0.2.1",
+        "typescript": "^2.2.2"
+    }
 }
