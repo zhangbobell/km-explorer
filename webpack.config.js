@@ -3,7 +3,9 @@ const path = require('path');
 
 module.exports = {
     entry: [
-        'react-hot-loader/patch',
+        'webpack-dev-server/client?http://0.0.0.0:3000', // WebpackDevServer host and port
+        'webpack/hot/only-dev-server', // "only" prevents reload on syntax errors
+
         './src/index.tsx'
     ],
     output: {
