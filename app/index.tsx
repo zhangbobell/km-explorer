@@ -13,6 +13,8 @@ import { MuiThemeProvider, lightBaseTheme } from 'material-ui/styles';
 
 import AppBar from './components/AppBar';
 import Drawer from './components/Drawer';
+import List from './components/List';
+import Toolbar from './components/Toolbar';
 import Hello from './components/Hello';
 
 const lightMuiTheme = getMuiTheme(lightBaseTheme);
@@ -37,6 +39,7 @@ export default class App extends React.Component<any, any> {
                     <div>
                        <AppBar />
                        <Drawer />
+                       <List />
                     </div>
                 </MuiThemeProvider>
             </IntlProvider>);

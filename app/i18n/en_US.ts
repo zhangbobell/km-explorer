@@ -11,5 +11,7 @@ export default {
     kityminder: 'KityMinder',
     myFile: 'My Files',
     recentlyUsed: 'Recently Used',
-    starred: 'Starred'
+    starred: 'Starred',
+    deleted: 'Deleted',
+    shared: 'Shared'
 }

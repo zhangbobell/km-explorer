@@ -4,6 +4,8 @@ import MenuItem from 'material-ui/MenuItem';
 import ActionHome from 'material-ui/svg-icons/action/home';
 import ActionHistory from 'material-ui/svg-icons/action/history';
 import ActionGrade from 'material-ui/svg-icons/action/grade';
+import ActionDelete from 'material-ui/svg-icons/action/delete';
+import FileFolderShared from 'material-ui/svg-icons/file/folder-shared';
 import { injectIntl, InjectedIntlProps } from 'react-intl';
 
 interface DrawerState {
@@ -29,7 +31,9 @@ class KMDrawer extends React.Component<DrawerProps, DrawerState> {
         let myFiles = this.props.intl.formatMessage({ id: 'myFile'});
         let recentlyUsed = this.props.intl.formatMessage({ id: 'recentlyUsed'});
         let starred = this.props.intl.formatMessage({ id: 'starred'});
-        let forceNavDown = {'top': '64px'}
+        let shared = this.props.intl.formatMessage({ id: 'shared'});
+        let deleted = this.props.intl.formatMessage({ id: 'deleted'});        
+        let forceNavDown = {'top': '128px'}
 
         return (<Drawer
                 open={this.state.open}
@@ -38,6 +42,8 @@ class KMDrawer extends React.Component<DrawerProps, DrawerState> {
                     <MenuItem leftIcon={<ActionHome />}>{myFiles}</MenuItem>
                     <MenuItem leftIcon={<ActionHistory />}>{recentlyUsed}</MenuItem>
                     <MenuItem leftIcon={<ActionGrade />}>{starred}</MenuItem>
+                    <MenuItem leftIcon={<FileFolderShared />}>{shared}</MenuItem>                    
+                    <MenuItem leftIcon={<ActionDelete />}>{deleted}</MenuItem>
             </Drawer>
         );
     }

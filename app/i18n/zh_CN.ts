@@ -12,5 +12,7 @@ export default {
     kityminder: '百度脑图',
     myFile: '我的文件',
     recentlyUsed: '最近使用',
-    starred: '带星标的'
+    starred: '带星标的',
+    deleted: '已删除的',
+    shared: '共享的文件'
 }

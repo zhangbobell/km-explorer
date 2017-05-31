@@ -2,6 +2,8 @@ import * as React from 'react'
 import AppBar from 'material-ui/AppBar';
 import { injectIntl, InjectedIntlProps } from 'react-intl';
 
+import Toolbar from '../Toolbar';
+
 
 class KMAppBar extends React.Component<InjectedIntlProps, undefined> {
 
@@ -14,6 +16,7 @@ class KMAppBar extends React.Component<InjectedIntlProps, undefined> {
 
         return (<AppBar
             title={title}
+            children={Toolbar}
             iconClassNameRight="muidocs-icon-navigation-expand-more"
         />);
     }
